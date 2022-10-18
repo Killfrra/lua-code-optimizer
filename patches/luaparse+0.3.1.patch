@@ -1,0 +1,21 @@
+diff --git a/node_modules/luaparse/luaparse.js b/node_modules/luaparse/luaparse.js
+index b7616db..f269e40 100644
+--- a/node_modules/luaparse/luaparse.js
++++ b/node_modules/luaparse/luaparse.js
+@@ -1607,13 +1607,15 @@
+   };
+ 
+   FullFlowContext.prototype.popScope = function () {
++    //TODO:
++    /*
+     for (var i = 0; i < this.pendingGotos.length; ++i) {
+       var theGoto = this.pendingGotos[i];
+       if (theGoto.maxDepth >= this.scopes.length)
+         if (--theGoto.maxDepth <= 0)
+           raise(theGoto.token, errors.labelNotVisible, theGoto.target);
+     }
+-
++    */
+     this.scopes.pop();
+   };
+ 

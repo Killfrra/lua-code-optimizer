@@ -1,0 +1,16 @@
+diff --git a/node_modules/luamin/luamin.js b/node_modules/luamin/luamin.js
+index a37f6b1..5aa173a 100644
+--- a/node_modules/luamin/luamin.js
++++ b/node_modules/luamin/luamin.js
+@@ -606,9 +606,8 @@
+ 			result = 'goto ' + generateIdentifier(statement.label.name);
+ 
+ 		} else {
+-
+-			throw TypeError('Unknown statement type: `' + statementType + '`');
+-
++			//TODO:
++			//throw TypeError('Unknown statement type: `' + statementType + '`');
+ 		}
+ 
+ 		return result;

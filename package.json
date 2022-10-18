@@ -1,0 +1,15 @@
+{
+	"type": "module",
+	"dependencies": {
+		"luamin": "^1.0.4",
+		"luaparse": "^0.3.1",
+		"patch-package": "^6.4.7"
+	},
+	"scripts": {
+		"postinstall": "patch-package"
+	},
+	"devDependencies": {
+		"@types/luaparse": "^0.2.8",
+		"@types/node": "^18.11.0"
+	}
+}
